@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogs</title>
+</head>
+<body>
+{% if posts %}
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Post</th>
+        </thead>
+        {% for post in posts %}
+        <tr>
+            <td>{{ post.first_name }} + {{ post.last_name }}</td>
+            <td>{{ post.date }}</td>
+            <td>{{ post.post }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+<p>No posts found!</p>
+{% endif %}
+</body>
+</html>
