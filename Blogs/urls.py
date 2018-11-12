@@ -1,8 +1,9 @@
-from django.conf import urls
+from django.conf.urls import url
 from django.urls import path
-from . import views
+from Blogs import views
 
 
 urlpatterns = [
-    path('blogs.html', views.blog_posts),
+    path('blog_posts.html', views.blog_posts, name='blog_posts'),
+    path('blog_form.html', views.blog_post_form, name='blog_post_form'),
 ]

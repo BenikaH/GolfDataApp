@@ -87,6 +87,11 @@ DATABASES = {
     'mongodb': {
         'ENGINE': 'djongo',
         'NAME': 'mongo',
+    },
+
+    'postgresql': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'PGAPlayerData',
     }
 }
 

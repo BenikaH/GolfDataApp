@@ -1,8 +1,8 @@
-#jumbo-header, #jumbo-sub-header {
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
 .btn {
     padding: 50px;
     margin-right: 100px;
+}
+
+.container {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
 }
