@@ -31,10 +31,10 @@ class MongoDb:
 
 class PostgreSQL:
 
-    def connect(self, *kwargs):
+    def connect(self, *args):
 
         try:
-            conn = psycopg2._psycopg.connection(*kwargs)
+            conn = psycopg2._psycopg.connection(*args)
             cur = conn.cursor()
         except psycopg2._psycopg.connection.Error as db_error:
             return db_error
