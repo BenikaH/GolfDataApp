@@ -86,7 +86,9 @@ DATABASES = {
 
     'mongodb': {
         'ENGINE': 'djongo',
-        'NAME': 'mongo',
+        'NAME': 'GolfDataApp',
+        'HOST': 'localhost',
+        'PORT': '27017',
     },
 
     'postgresql': {
